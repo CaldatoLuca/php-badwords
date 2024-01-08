@@ -12,13 +12,16 @@
 
     <form action="result.php" method="GET">
         <label for="text">Inserisci il testo</label>
-        <textarea name="" id="text" cols="30" rows="10"></textarea>
+        <textarea name="testo" id="text" cols="30" rows="10"></textarea>
 
         <label for="badword">Inserisci la parola da eliminare</label>
-        <input type="text" id="badword">
+        <input type="text" id="badword" name="nome">
 
         <button>Send</button>
     </form>
+
+
+
 </body>
 
 </html>
