@@ -1,6 +1,8 @@
 <?php
 $text_area = $_GET['testo'];
 $bad_word = $_GET['nome'];
+$new_text_area = str_replace($bad_word, '***', $text_area);
+
 
 ?>
 
@@ -20,7 +22,9 @@ $bad_word = $_GET['nome'];
     </div>
 
     <div>
-        <?php echo $bad_word; ?>
+        <?php echo $new_text_area ?>
+        <?php echo strlen($new_text_area) ?>
+
     </div>
 
 </body>
