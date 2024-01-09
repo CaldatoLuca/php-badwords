@@ -1,9 +1,7 @@
 <?php
 $text_area = $_GET['testo'];
 $bad_word = $_GET['nome'];
-$new_text_area = str_replace($bad_word, '***', $text_area);
-
-
+$new_text_area = str_replace($bad_word, ' *** ', $text_area);
 ?>
 
 <!DOCTYPE html>
@@ -19,11 +17,14 @@ $new_text_area = str_replace($bad_word, '***', $text_area);
 
 <body class="d-flex justify-content-center align-items-center vh-100 bg-warning p-4">
     <div class="text-center gap-5  d-flex bg-dark p-5 rounded-3 shadow-lg text-white fw-bold">
+        <!-- testo originale -->
         <div>
             <h3 class="text-warning mb-4">Original Text</h3>
             <p> <?php echo $text_area; ?></p>
             <div> <?php echo strlen($text_area) ?></div>
         </div>
+
+        <!-- testo modificato -->
         <div>
             <h3 class="text-warning mb-4">Edited Text</h3>
             <p> <?php echo $new_text_area ?></p>
