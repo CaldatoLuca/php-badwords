@@ -1,5 +1,9 @@
 # Badwords
 
+https://github.com/CaldatoLuca/php-badwords/assets/144032332/a6730a44-6749-418f-adcd-85b2ecb6f876
+
+
+
 Badwords è un progetto sviluppato interamente in PHP che ha lo scopo di raccogliere un testo e una parola dall'utente tramite un form. Una volta inviato il form con il bottone apposito, i dati vengono trasferiti su un'altra pagina, dove il testo inserito viene visualizzato insieme al testo modificato, nel quale la parola inserita è stata rimossa e sostituita con tre asterischi. I dati sono passati tramite il metodo GET e raccolti con la variabile `$_GET`.
 
 ## Utilizzo
